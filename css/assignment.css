@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.container {
+    background: #efefef;
+    border-top: 5px solid #bfbfbf;
+}
+
+.buttonContainer {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 10px 0;
+}
+
+button {
+    color: #ffffff;
+    background: #72c3dc;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    line-height: 35px;
+    height: 35px;
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 0 3px #2c8fae;
+    cursor: pointer;
+}
+
+.divContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.divContainer > div {
+    color: #fefefe;
+    width: 33.3%;
+    text-align: center;
+    line-height: 180px;
+    font-size: 100px;
+    background: #efefef;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (min-width:376px) {
+    #div1, #div8 {
+        background: #6f98a8;
+    }
+
+    #div2, #div4 {
+        background: #2b8ead;
+    }
+
+    #div3, #div5, #div9 {
+        background: #2f454e;
+    }
+
+    #div6, #div7 {
+        background: #bfbfbf;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        border: 7px solid #000000;
+    }
+
+    header {
+        background: #333333;
+        color: #ffffff;
+    }
+
+    .container {
+        background: #ffffff;
+        border-top: none;
+        margin: 10px;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 25%;
+        margin: 5px;
+    }
+
+    .divContainer {
+        width: 100%;
+    }
+
+    .divContainer > div {
+        color: #000000;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    #div1, #div8 {
+        border-left: 7px solid #6f98a8;
+    }
+
+    #div2, #div4 {
+        border-left: 7px solid #2b8ead;
+    }
+
+    #div3, #div5, #div9 {
+        border-left: 7px solid #2f454e;
+    }
+
+    #div6, #div7 {
+        border-left: 7px solid #bfbfbf;
+    }
+
+    footer {
+        padding-bottom: 0;
+        margin-top: 15px;
+    }
+}
